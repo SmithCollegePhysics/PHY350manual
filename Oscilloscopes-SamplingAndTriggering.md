@@ -65,6 +65,7 @@ By switching from SAMPLE to PEAK DETECT, we have changed which data points the o
 
 :::
 
+![repeat image in peack detect mode mode](./images/Peak12.png) 
 
 # Why This Matters
 

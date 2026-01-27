@@ -1,0 +1,28 @@
+```{code-cell} python
+# Import necessary libraries
+import ipywidgets as widgets
+from IPython.display import display
+
+# Function to be called when the value changes
+def on_value_change(change):
+    # Get the new numerical value
+    new_value = change['new']
+    # Perform some operation (e.g., square the number)
+    result = new_value ** 2
+    # Display the result
+    print(f"The square of {new_value} is {result}")
+
+# Create the numerical input widget (IntText for integer input)
+# You could use FloatText for floating-point numbers
+numerical_input = widgets.IntText(
+    value=0,
+    description='Enter a number:',
+    disabled=False
+)
+
+# Observe changes in the input
+numerical_input.observe(on_value_change, names='value')
+
+# Display the input box
+display(numerical_input)
+```

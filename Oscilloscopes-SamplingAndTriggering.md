@@ -51,21 +51,21 @@ Use a function generator to create a 40 ns wide 5 Vpp pulse that repeats once pe
 
 1. Default settings: Try triggering on the pulses using the default sample/AUTO sample and trigger modes using AUTOSET. In most cases, the scope won't successfully trigger initially, but you might succeed if you switch from AUTO to NORM and raise the trigger threshold to +1 V.  An example of what you are likely to see once doing so if you are able to capture the signal is shown below. We are triggering, but we only see a flat horizontal line (with some noise) displayed on the screen. 
 
-![scope image in default mode](./images/Peak10.PNG) 
+![scope image in default mode!](./images/Peak10.PNG) 
 
 2. Peak Detect sampling mode: It is difficult to record and display data points from very short pulses at slow repetition rates when sampling and storing data at equal time intervals. To improve our chances, we want to scope to save and display  points corresponding to the maxima and minima in any sampling interval, as these are more likely to correspond to peaks in the signal due to pulses .To do this, switch the sampling mode from SAMPLE to PEAK DETECT and try again using AUTOSET.  Your display should now look like the one shown below. Notice that there is now a thin but sharp vertical line at the t=0 trigger point, because the scope is now recording and displaying peaks in the data! 
 
-![scope image in peak detect mode](./images/Peak11.PNG) 
+![scope image in peak detect mode!](./images/Peak11.PNG) 
 
 3. Adjust horizontal timebase and vertical scale: finally, adjust the timebase  and vertical scale to resolve the rise and fall of the pulse. Adjust the trigger level to the 50% level for the 5 Vpp (2.5 V). You should now see an image like the following:  
 
-![pulse image in peack detect mode mode](./images/Peak12.PNG) 
+![pulse image in peack detect mode mode!](./images/Peak12.PNG) 
 
 By switching from SAMPLE to PEAK DETECT, we have changed which data points the oscilloscope stores and displays so that it looks for,  detects, and displays peaks in the data instead of simply recording data at equal time intervals. The choice of sampling mode depends on the signal you are measuring: the default SAMPLE mode is optimized for continuous waveforms (since as sine waves); the PEAK DETECT mode is  optimized to detect short quickly changing transient features in a waveform. IF you don't know what kind of signal you have, try both! 
 
 :::
 
-![repeat image in peack detect mode mode](./images/Peak12.PNG) 
+![repeat image in peak detect mode mode!](./images/Peak12.PNG) 
 
 # Why This Matters
 

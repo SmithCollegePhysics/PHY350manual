@@ -21,6 +21,9 @@ abstract: |
   We investigate how to detect features in your data you don't already know are there by trying out the different sampling and triggering settings for your digital oscilloscope. 
 ---
 
+:::{warning}
+This page is not yet complete but is under active development. Please check back for updates!
+:::
 # Introduction
 
 When you first turn on a digital storage oscilloscope, it will select the data sampling and triggering settings most commonly used to acquire a periodic signal. The number of voltage measurements made per acquistion interval is often a fixed rate, but this usually generates more data than can be stored in memory for one sweep of the signal across the screen.  
@@ -42,24 +45,23 @@ The default sampling method — unsurprisingly named `sample`— retains one sa
 :::{dropdown} Discovery Exercise: event detection with an oscilloscope
 
 
-```{exercise-start} 
-:label: Motivating Exercise 1
+Use a function generator to create a 40 ns wide 5 Vpp pulse that repeats once per second. Ask your instructor for help [^RTB2004_generator_pulse_setup] if needed! 
 
-Motivating Exercise text
+[^RTB2004_generator_pulse_setup]: if using the RTB2004 internal function generator, you can follow these steps: First, set up a 500 kHz 5V pp square wave with a duty cycle of 1%. Next,  add a +2.5 V dc offset if you want it to go from 0 to 5 V. Third, select the `BURST` submenu. Once in the burst menu,  set the number of bursts N = 1 . Finally, turn on the generator output (you should see the GEN button light up) and connect the AUX output to an input channel on the oscilloscope to look for the pulses. 
 
-```
+1. Default settings: Try triggering on the pulses using the default sample/AUTO sample and trigger modes using AUTOSET. In most cases, the scope won't successfully trigger initially, but you might succeed if you switch from AUTO to NORM and raise the trigger threshold to +1 V.  An example of what you are likely to see once doing so if you are able to capture the signal is shown below. We are triggering, but we only see a flat horizontal line (with some noise) displayed on the screen. 
 
-```python
-# Some code to explain the figure
-```
+![scope image in default mode](./images/Peak10.png) 
 
-and maybe you wish to add a figure
+2. Peak Detect sampling mode: It is difficult to record and display data points from very short pulses at slow repetition rates when sampling and storing data at equal time intervals. To improve our chances, we want to scope to save and display  points corresponding to the maxima and minima in any sampling interval, as these are more likely to correspond to peaks in the signal due to pulses .To do this, switch the sampling mode from SAMPLE to PEAK DETECT and try again using AUTOSET.  Your display should now look like the one shown below. Notice that there is now a thin but sharp vertical line at the t=0 trigger point, because the scope is now recording and displaying peaks in the data! 
 
+![scope image in default mode](./images/Peak11.png) 
 
+3. Adjust horizontal timebase and vertical scale: finally, adjust the timebase  and vertical scale to resolve the rise and fall of the pulse. Adjust the trigger level to the 50% level for the 5 Vpp (2.5 V). You should now see an image like the following:  
 
-```{exercise-end}
+![scope image in default mode](./images/Peak12.png) 
 
-```
+By switching from SAMPLE to PEAK DETECT, we have changed which data points the oscilloscope stores and displays so that it looks for,  detects, and displays peaks in the data instead of simply recording data at equal time intervals. The choice of sampling mode depends on the signal you are measuring: the default SAMPLE mode is optimized for continuous waveforms (since as sine waves); the PEAK DETECT mode is  optimized to detect short quickly changing transient features in a waveform. IF you don't know what kind of signal you have, try both! 
 
 :::
 

@@ -65,10 +65,6 @@ By switching from SAMPLE to PEAK DETECT, we have changed which data points the o
 
 :::
 
-```{figure} ./images/Peak12.png
-:label: 40 ns pulse captured with sampling mode set to PEAK DETECT
-: alt: use PEAK DETECT instead of SAMPLE for pulse detection
-: align: center
 
 # Why This Matters
 

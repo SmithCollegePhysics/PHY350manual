@@ -51,7 +51,7 @@ Use a function generator to create a 40 ns wide 5 Vpp pulse that repeats once pe
 
 1. Default settings: Try triggering on the pulses using the default sample/AUTO sample and trigger modes using AUTOSET. In most cases, the scope won't successfully trigger initially, but you might succeed if you switch from AUTO to NORM and raise the trigger threshold to +1 V.  An example of what you are likely to see once doing so if you are able to capture the signal is shown below. We are triggering, but we only see a flat horizontal line (with some noise) displayed on the screen. 
 
-   ![scope image in default mode!](./images/Peak10.png 
+   ![scope image in default mode!](./images/Peak10.png) 
 
 2. Peak Detect sampling mode: It is difficult to record and display data points from very short pulses at slow repetition rates when sampling and storing data at equal time intervals. To improve our chances, we want to scope to save and display  points corresponding to the maxima and minima in any sampling interval, as these are more likely to correspond to peaks in the signal due to pulses .To do this, switch the sampling mode from SAMPLE to PEAK DETECT and try again using AUTOSET.  Your display should now look like the one shown below. Notice that there is now a thin but sharp vertical line at the t=0 trigger point, because the scope is now recording and displaying peaks in the data! 
 
@@ -78,6 +78,7 @@ Left to its own devices, a digital storage oscilloscope  (DSO) will miss feature
 :align: center
 
 A digital store oscilloscope interpolates between voltage measurements made at discrete intervals in time. The data is stored in the oscilloscope's memory buffer. [Image source](https://www.keysight.com/blogs/en/tech/bench/2022/05/09/real-time-vs-sampling-oscilloscopes-what-are-the-differences)
+
 ```
 
 

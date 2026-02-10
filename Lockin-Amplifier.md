@@ -117,7 +117,7 @@ You'll continue to use the function generator sync output as the external trigge
 | 10 mV RMS | off       | V_{RMS} $\pm$ ?   | x s/div, N avg | V_{RMS} $\pm$ ? | Tc, db/oct | do both work equally well? | 
 | 10 mV RMS | 10 mV RMS | V_{RMS} $\pm$ ?   | x s/div, N avg | V_{RMS} $\pm$ ? | Tc, db/oct | how do the two instruments compare?  | 
 | 10 mV RMS | 100 mV RMS |  |  |  |  | is one clearly better?  | 
-| 5 mV RMS | 500 mV RMS |  |  |  |  | does oscilloscope still work?   | 
+| 2.5 mV RMS | 250 mV RMS |  |  |  |  | does oscilloscope still work?   | 
 :::
 
 5. Why do you think the lock-in amplifier better able to recover a signal buried in noise? 

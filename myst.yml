@@ -58,6 +58,11 @@ project:
            children: 
              - file: ComingSoon.md
              - file: RealSoon.md
+         - title: Lock-in Amplifiers
+           children: 
+             - file: Lockin-Amplifier.md
+             - file: RealSoon.md  
+            
              # - file: code/03-inline-interactivity.ipynb
         # - file: OscilloscopeReadMe.md
     - title: Data Analysis

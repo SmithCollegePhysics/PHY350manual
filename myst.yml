@@ -82,6 +82,7 @@ project:
                children:
                - file: code/Histogram_numpy.ipynb
                - file: code/Histogram_pandas.ipynb
+               - file: code/ComingSoon.md
              - title: MatPlotLib
                children:
                - file: code/MatPlotLibDemonstration.ipynb

@@ -85,7 +85,7 @@ project:
              - title: MatPlotLib
                children:
                - file: code/MatPlotLibDemonstration.ipynb
-               - file: ComingSoon.md
+               - file: RealSoon.md
     - title: Communicating Results
       file: CommunicatingResults.md
       children:

@@ -78,8 +78,14 @@ project:
             - file: ComingSoon.md
          - title: Data Plotting
            children: 
-            - file: code/MatPlotLibDemonstration.ipynb
-            - file: RealSoon.md
+             - title: Histograms
+               children:
+               - file: code/Histogram_numpy.ipynb
+               - file: code/Histogram_pandas.ipynb
+             - title: MatPlotLib
+               children:
+               - file: code/MatPlotLibDemonstration.ipynb
+               - file: ComingSoon.md
     - title: Communicating Results
       file: CommunicatingResults.md
       children:

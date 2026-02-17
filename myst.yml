@@ -62,6 +62,10 @@ project:
            children: 
              - file: Lockin-Amplifier.md
              - file: RealSoon.md  
+         - title: DC measurements
+           children: 
+             - file: Light_Polarization.md
+             - file: RealSoon.md  
             
              # - file: code/03-inline-interactivity.ipynb
         # - file: OscilloscopeReadMe.md

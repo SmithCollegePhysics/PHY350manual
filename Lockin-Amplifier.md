@@ -83,7 +83,7 @@ For comparison, let's also connect the function generator outputs to a lock-in a
 
 1. **Reference**: set the lock-in reference to `external` and `square wave` rather than sine wave if you are given the option.  Once you have the settings adjusted, use a  BNC `T` connector so that the sync output from the function generator can go to both the `reference in` of the lock-in amplifier and the external trigger input of the oscilloscope.
  
-2.  **Signal input**: set to single-ended mode (A) rather than differential voltage mode (A-B) or current input mode (I). You can also set the coupling mode and grounding mode. We recommend starting with `ac` for coupling mode and  `float`[^float] for grounding mode, but the alternatives will also work here.  Once you have the settings adjusted, use another BNC `T` connector so that the signal output from the function generator can  go to both the channel A voltage input of the lock-in and channel 1 of the oscilloscope. 
+2.  **Signal input**: set to single-ended mode (A) rather than differential voltage mode (A-B) or current input mode (I). You can also set the coupling mode and grounding mode. We recommend starting with `ac` for coupling mode and  `float`[^float] for grounding mode.  Once you have the settings adjusted, use another BNC `T` connector so that the signal output from the function generator can  go to both the channel A voltage input of the lock-in and channel 1 of the oscilloscope. 
 
 3. On the lock-in, select AUTO MEASURE or AUTO GAIN + AUTO PHASE. These are the lock-in equivalent of `AUTOSET` on the oscilloscope. Then adjust the time constant to 0.1 sec, 12 db/oct. The period of a 1 kHz signal is 1 msec, so a single time constant of 0.1 seconds 6 db/oct effectively averages over 100 periods of a 1 kHz signal. 
 
@@ -142,7 +142,7 @@ In this exercise, we use the [TeachSpin SPLIA1-A](https://www.teachspin.com/sign
 
 ## initial setup
 
-We want to use the TeachSpin SPLIA1-A to produce a dc signal proportional to the amplitude of a 1 kHz sine wave. 
+We will use the TeachSpin SPLIA1-A to produce a dc signal proportional to the amplitude of a 1 kHz sine wave. For this instrument, always use `ac` coupling.
 
 1. Configure channel 1 of your two channel function generator to be a 1 kHz sine wave with an amplitude of 10 mV RMS. This will be $V_s(t)$ , the signal we want to measure. 
 

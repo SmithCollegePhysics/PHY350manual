@@ -75,17 +75,13 @@ project:
          - title: Data Input and Output
            children: 
             - file: code/csv_data_import_pandas.ipynb
-            - file: ComingSoon.md
+            - file: code/MatPlotLibDemonstration.ipynb
          - title: Data Plotting
            children: 
              - title: Histograms
                children:
                - file: code/histogram_numpy.ipynb
                - file: code/histogram_pandas.ipynb
-             - title: MatPlotLib
-               children:
-               - file: code/MatPlotLibDemonstration.ipynb
-               - file: RealSoon.md
     - title: Communicating Results
       file: CommunicatingResults.md
       children:

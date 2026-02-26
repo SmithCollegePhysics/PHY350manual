@@ -76,7 +76,6 @@ a typical current-voltage curve for a 650nm laser diode. The voltage must be abo
 
 ```{solution} diode-resistance
 :class:dropdown
-:open: false
 
 Discuss this with your lab partner and instructors, then enter your description and thoughts about this into the Jupyter notebook you are using as a notebook for this lab! 
 ```
@@ -87,7 +86,6 @@ Suppose you have an option of controlling either the supplied current or the sup
 ```
 ```{solution} regulated-power-supplies
 :class:dropdown
-:open: false
 
 As before, discuss this with your lab partner and instructors, then enter your choice into the Jupyter notebook you are using as a notebook for this lab. 
 ```
@@ -183,7 +181,6 @@ In this experiment, we want to figure out a way to distinguish between the vario
 ```{exercise}
 :label:light-sources
 :class:dropdown
-:open: false
 
 1. Come up with a couple of simple ways to distinguish between the laser light and the room light in your measurements, then discuss these with your instructor. 
 2. Try out one or both of your tests and report the results (in your Jupyter lab notebook). 
@@ -197,7 +194,6 @@ IN this experiment, we want to figure out a way to completely eliminate the cont
 ```{exercise}
 :label:LCD-shutter
 :class:dropdown
-:open: false 
 
 
 

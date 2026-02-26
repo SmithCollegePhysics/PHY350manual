@@ -82,6 +82,8 @@ project:
                children:
                - file: code/histogram_numpy.ipynb
                - file: code/histogram_pandas.ipynb
+            - title: Interpolation
+              file: Scipy_cubic_interplation.ipynb
     - title: Communicating Results
       file: CommunicatingResults.md
       children:

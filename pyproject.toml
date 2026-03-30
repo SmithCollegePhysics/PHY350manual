@@ -6,11 +6,14 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "ipywidgets>=8.1.8",
+    "jupyter>=1.1.1",
     "jupyter-book>=2.1.0",
     "matplotlib>=3.10.8",
     "mystmd>=1.7.1",
+    "notebook>=7.5.5",
     "numpy>=2.4.1",
     "pandas>=3.0.0",
+    "scipy>=1.17.1",
     "sympy>=1.14.0",
     "typst>=0.14.6",
 ]

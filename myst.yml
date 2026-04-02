@@ -86,6 +86,10 @@ project:
            children: 
             - file: code/Scipy_cubic_interpolation.ipynb
             - file: ComingSoon.md
+         - title: Data Smoothing and Filtering
+           children: 
+            - file: code/data_smoothing.ipynb
+            - file: code/data_filtering.ipynb
     - title: Communicating Results
       file: CommunicatingResults.md
       children:

@@ -1,0 +1,13 @@
+﻿Applied_Voltage (V),Forward_Current (mA),notes 
+0,0,off
+1,0,below turn on voltage
+1.5,0.05,leakage current
+1.6,0.15,very faint glow
+1.7,0.5,"""knee"" in conduction curve"
+1.8,1.8,visible light! 
+1.9,5.2,moderate brightness
+1.95,9.5,bright
+2,15,standard operating point
+2.05,18.5,high brightness
+2.1,23,recommended operating maximum
+2.2,30,"above rated current, risk of failure"

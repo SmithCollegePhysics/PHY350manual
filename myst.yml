@@ -75,6 +75,7 @@ project:
          - title: Data Input and Output
            children:
             - file: Data_File_Formats.md 
+            - file: code/CSV_Import_Numpy.ipynb
             - file: code/csv_data_import_pandas.ipynb
             - file: code/MatPlotLibDemonstration.ipynb
          - title: Data Plotting
